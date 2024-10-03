@@ -1,0 +1,63 @@
+/* reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: dodgerblue;
+  padding: 1.5rem;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-lists {
+  display: flex;
+  gap: 1rem;
+}
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  margin-top: 5rem;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.fa-bars {
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* child selector */
+
+.container > div {
+  background-color: dodgerblue;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width: 768px) {
+  .fa-bars {
+    display: block;
+  }
+  .nav-lists {
+    display: none;
+  }
+}

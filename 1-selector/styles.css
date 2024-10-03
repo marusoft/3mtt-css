@@ -1,0 +1,89 @@
+/* basic syntax */
+/* selector{ */
+/* css ruleset */
+/* property-name: value */
+/* } */
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", monospace, sans-serif;
+}
+/* class selector */
+
+.container {
+  margin: 3rem;
+  text-align: center;
+  background-color: dodgerblue;
+  padding: 1rem;
+  color: #ffffff;
+}
+.title {
+  font-size: 2rem;
+}
+.desc {
+  font-size: 1.1rem;
+}
+
+/* id selector */
+#container {
+  margin: 1.1rem;
+  background-color: rebeccapurple;
+  color: #ffffff;
+  padding: 1rem;
+}
+#lists {
+  list-style: none;
+}
+
+/* element selector */
+
+li {
+  font-size: 1.5rem;
+}
+/* Grouping element element selector */
+h3,
+p {
+  color: dodgerblue;
+}
+.form-container {
+  text-align: center;
+  border: 2px solid rebeccapurple;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.form-container input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 0.6rem 0;
+  border: 1px solid dodgerblue;
+  outline: none;
+}
+.form-container button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color: dodgerblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* pseudo class slector */
+/* : */
+.form-container button:hover {
+  background-color: #fff;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+/* pseudo element slector */
+/* :: */
+
+.form-container input::placeholder{
+  color: dodgerblue;
+}
